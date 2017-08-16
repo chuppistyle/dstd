@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Panton";
+  src: url("../fonts/panton/Panton.otf"); }
+@font-face {
+  font-family: "Panton SemiBold";
+  src: url("../fonts/panton/PantonSemiBold.otf"); }
+@font-face {
+  font-family: "Panton Bold";
+  src: url("../fonts/panton/PantonBold.otf"); }
+@font-face {
+  font-family: "Panton Black";
+  src: url("../fonts/panton/PantonBlack.otf"); }
+@font-face {
+  font-family: "Clear Sans";
+  src: url("../fonts/clear-sans/ClearSans-Regular.ttf"); }
+@font-face {
+  font-family: "Clear Bold";
+  src: url("../fonts/clear-sans/ClearSans-Bold.ttf"); }
+@font-face {
+  font-family: "MyriadPro";
+  src: url("../fonts/myriad-pro/MyriadPro-regular.otf"); }
+
+/*# sourceMappingURL=fonts.css.map */
