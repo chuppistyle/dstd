@@ -29,7 +29,6 @@ $('.slick-slider-reviews').slick({
         $('#prev').bind('click', function () {
             carousel.prev();
             var leftValue = parseInt($('p.left').text());
-            var SliderImgCount =  $('#carousel a').length;
             $('p.right').text(SliderImgCount);
             if(leftValue == 1){
                 $('p.left').text(SliderImgCount)
@@ -62,19 +61,57 @@ $('.slick-slider-reviews').slick({
 
     });
 ///Google Map//
-//55.924708, 37.504811
 var map;
-var coords = {lat: 55.924708, lng:37.504808};
+var coords={
+    'l14':{lat:55.924708, lng:37.504808},
+    'l15':{lat:55.924119, lng:37.503349}
+};
+function openMap() {
+    document.querySelector('#open-map').onclick= function () {
+        document.querySelector('.contact-form').style.display="none";
+        document.querySelector('#map-canvas').classList.add('before-none');
+    };
+}
+openMap();
 function initMap() {
+    var map, map2;
     map = new google.maps.Map(document.getElementById('map'), {
-        center: coords,
+        center: coords['l14'],
         zoom: 16,
-        disableDefaultUI: true,
-        fullscreenControl: true
+        disableDefaultUI: true
     });
+    document.querySelector("#d14").onclick=function () {
+        map.setCenter(coords['l14']);
+    };
+    document.querySelector("#d15").onclick=function () {
+        map.setCenter(coords['l15']);
+    };
+    map2 = new google.maps.Map(document.getElementById('map-canvas'), {
+        center: coords['l14'],
+        zoom: 16
+    });
+
     var marker = new google.maps.Marker({
-        position: coords,
+        position: coords['l14'],
         map: map,
+        title: 'ДСДТ',
+        icon:"../img/map-marker.png"
+    });
+    var markerBot = new google.maps.Marker({
+        position: coords['l14'],
+        map: map2,
+        title: 'ДСДТ',
+        icon:"../img/map-marker.png"
+    });
+    var marker2 = new google.maps.Marker({
+        position: coords['l15'],
+        map: map,
+        title: 'ДСДТ',
+        icon:"../img/map-marker.png"
+    });
+    var markerBot2 = new google.maps.Marker({
+        position: coords['l15'],
+        map: map2,
         title: 'ДСДТ',
         icon:"../img/map-marker.png"
     });
@@ -95,4 +132,9 @@ function initMap() {
         infowindow.open(map, marker);
 
     });
+    markerBot.addListener('click', function() {
+        infowindow.open(map2, markerBot);
+
+    });
+
 };
