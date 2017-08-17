@@ -1154,6 +1154,9 @@ section#gallery h3 {
   font-size: 16px;
   line-height: 22px; }
 
+section#gallery a {
+  cursor: pointer; }
+
 section#gallery a > img {
   width: 540px;
   height: 270px; }
