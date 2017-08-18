@@ -17,7 +17,7 @@
   src: url("../fonts/clear-sans/ClearSans-Regular.ttf"); }
 @font-face {
   font-family: "Clear Bold";
-  src: url("../fonts/clear-sans/ClearSans-Bold.ttf"); }
+  src: url("../fonts/clear-sans/ClearSans-Bold.woff"); }
 @font-face {
   font-family: "MyriadPro";
   src: url("../fonts/myriad-pro/MyriadPro-regular.otf"); }
@@ -253,7 +253,8 @@ header span.time-work {
   display: inherit;
   padding-top: 13px;
   font-weight: 400;
-  font-size: 14px; }
+  font-size: 14px;
+  font-family: "Clear Sans"; }
 
 .navbar {
   position: inherit;
@@ -282,7 +283,8 @@ header span.time-work {
 .navbar-default .navbar-nav > li > a {
   color: #31313f;
   font-weight: 300;
-  padding: 0 18px 10px 0; }
+  padding: 0 17px 10px 0;
+  font-family: "Clear Sans"; }
 
 /**************!!HEADER END!!!******************/
 /**************!!Section#main!!!******************/
@@ -879,7 +881,8 @@ section#choice .choice button {
   width: 100%;
   height: 37px;
   border: none;
-  color: #ffffff; }
+  color: #ffffff;
+  font-family: "Clear Sans"; }
 
 section#choice .choice button:hover {
   color: #2272f6;
@@ -1312,7 +1315,6 @@ section#warranty p {
 section#warranty .center_warranty {
   background: url("../img/section-warranty/bg-center.png");
   background-position: center;
-  background-size: 100%;
   margin-top: 55px; }
 
 section#warranty .center_warranty .row {
@@ -1825,6 +1827,187 @@ footer .rights {
   padding-bottom: 8px; }
 
 /**************!!Footer END !!!******************/
+.call-and-feedback .modal-dialog {
+  margin: 0 auto;
+  padding-top: 250px;
+  width: 400px;
+  max-width: 400px; }
+
+.call-and-feedback .modal-header {
+  border: none;
+  padding-top: 35px;
+  padding-bottom: 0; }
+
+.call-and-feedback h2 {
+  font-family: "Panton";
+  font-size: 25px;
+  color: #333333;
+  padding-bottom: 14px;
+  font-weight: 600; }
+
+.call-and-feedback h3 {
+  font-family: "Clear Sans";
+  font-size: 14px; }
+
+.call-and-feedback input, .call-and-feedback textarea {
+  display: block;
+  width: 100%; }
+
+.call-and-feedback form {
+  padding-bottom: 15px; }
+
+.call-and-feedback input {
+  height: 40px;
+  margin-bottom: 10px; }
+
+.call-and-feedback textarea {
+  height: 144px;
+  resize: none; }
+
+.call-and-feedback input, .call-and-feedback textarea {
+  outline: none;
+  border-radius: 6px;
+  padding: 12px;
+  border: 1px solid #dfdfe6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #ffffff;
+  font-family: "Clear Sans";
+  font-size: 14px;
+  color: #858585; }
+
+.call-and-feedback input::-webkit-input-placeholder, .call-and-feedback textarea::-webkit-input-placeholder {
+  font-family: "Clear Sans";
+  font-size: 14px;
+  color: #858585; }
+
+.call-and-feedback input:-ms-input-placeholder, .call-and-feedback textarea:-ms-input-placeholder {
+  font-family: "Clear Sans";
+  font-size: 14px;
+  color: #858585; }
+
+.call-and-feedback input::placeholder, .call-and-feedback textarea::placeholder {
+  font-family: "Clear Sans";
+  font-size: 14px;
+  color: #858585; }
+
+.call-and-feedback input:focus, .call-and-feedback textarea:focus {
+  border: 1px solid #2272f6; }
+
+.call-and-feedback .modal-body button {
+  border-radius: 18px;
+  background-color: #2272f6;
+  width: 255px;
+  height: 37px;
+  text-transform: uppercase; }
+
+.call-and-feedback button.close {
+  opacity: .8; }
+
+.call-and-feedback button.close:hover {
+  opacity: 1; }
+
 /********************MEDIA SCREENS*********************/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /*header*/
+  a.logo img {
+    width: 48%; }
+
+  ul.phone-numb {
+    font-size: 16px; }
+
+  ul.phone-numb span {
+    font-size: 18px; }
+
+  .call button {
+    font-size: 14px; }
+
+  .call button::before {
+    left: 17px; }
+
+  .navbar-default .navbar-nav > li > a {
+    font-size: 14px;
+    padding: 0 9px 10px 0; }
+
+  /*main*/
+  section#main {
+    text-align: center; }
+
+  section#main .row {
+    padding-top: 40px;
+    padding-bottom: 130px; }
+
+  section#main h1 {
+    padding-bottom: 50px; }
+
+  section#main .main-block:before {
+    left: -45px; }
+
+  section#main .main-block {
+    padding-bottom: 55px; }
+
+  section#main .scroll-down span {
+    bottom: 60px; }
+
+  /*sentence*/
+  section#sentence .sentence:nth-child(3) [class*='col-md-5'] {
+    padding-left: 10px; }
+
+  section#sentence img {
+    max-width: 100%;
+    height: 324px; }
+
+  section#sentence .call h4 {
+    padding-bottom: 0; }
+
+  /*lovol*/
+  section#lovol::before {
+    content: url("../img/section-lovol/dots-min.png");
+    bottom: 6px;
+    left: 50px; }
+
+  section#lovol::after {
+    content: url("../img/section-lovol/loader-min.png");
+    bottom: -82px;
+    left: 20px; }
+
+  /*advantages*/
+  section#advantages p {
+    font-size: 14px;
+    line-height: 20px; }
+
+  /*equipment*/
+  section#equipment .slick-dots li {
+    width: 42px;
+    margin-right: 15px; }
+
+  section#equipment ul.text li {
+    font-size: 16px; }
+
+  section#equipment ul.text li br {
+    display: none; }
+
+  section#equipment .img-and-text:nth-child(2)::before {
+    right: 0; }
+
+  section#equipment .img-and-text:nth-child(5)::before {
+    right: 0; }
+
+  /*services*/
+  section#services button.circle::after {
+    width: 240px; }
+
+  section#services h3 {
+    font-size: 24px; }
+
+  section#services p {
+    font-size: 14px; }
+
+  /*warranty*/
+  section#warranty p {
+    font-size: 14px; }
+
+  section#warranty .work [class*="col"] .img-number::after {
+    right: -100px; } }
 
 /*# sourceMappingURL=style.css.map */

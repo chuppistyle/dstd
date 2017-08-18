@@ -62,18 +62,22 @@ $('.slick-slider-reviews').slick({
     });
 ///Google Map//
 var map;
-var coords={
-    'l14':{lat:55.924708, lng:37.504808},
-    'l15':{lat:55.924119, lng:37.503349}
-};
+
 function openMap() {
     document.querySelector('#open-map').onclick= function () {
         document.querySelector('.contact-form').style.display="none";
         document.querySelector('#map-canvas').classList.add('before-none');
     };
 }
+
 openMap();
+var coords={
+    'l14':{lat:55.924708, lng:37.504808},
+    'l15':{lat:55.924119, lng:37.503349}
+};
 function initMap() {
+
+    var icon = "../img/map-marker.png";
     var map, map2;
     map = new google.maps.Map(document.getElementById('map'), {
         center: coords['l14'],
@@ -95,25 +99,25 @@ function initMap() {
         position: coords['l14'],
         map: map,
         title: 'ДСДТ',
-        icon:"../img/map-marker.png"
-    });
-    var markerBot = new google.maps.Marker({
-        position: coords['l14'],
-        map: map2,
-        title: 'ДСДТ',
-        icon:"../img/map-marker.png"
+        icon:icon
     });
     var marker2 = new google.maps.Marker({
         position: coords['l15'],
         map: map,
         title: 'ДСДТ',
-        icon:"../img/map-marker.png"
+        icon:icon
+    });
+    var markerBot = new google.maps.Marker({
+        position: coords['l14'],
+        map: map2,
+        title: 'ДСДТ',
+        icon:icon
     });
     var markerBot2 = new google.maps.Marker({
         position: coords['l15'],
         map: map2,
         title: 'ДСДТ',
-        icon:"../img/map-marker.png"
+        icon:icon
     });
 
     var contentString = '<div id="content-info">'+
@@ -130,11 +134,10 @@ function initMap() {
     });
     marker.addListener('click', function() {
         infowindow.open(map, marker);
-
     });
     markerBot.addListener('click', function() {
         infowindow.open(map2, markerBot);
-
+        document.querySelector('.contact-form').style.display="block";
+        document.querySelector('#map-canvas').classList.remove('before-none');
     });
-
 };

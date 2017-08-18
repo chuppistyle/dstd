@@ -193,6 +193,7 @@ header span.time-work{
   padding-top: 13px;
   font-weight: 400;
   font-size: 14px;
+  font-family: "Clear Sans";
 }
 .navbar{
   position: inherit;
@@ -221,7 +222,8 @@ header span.time-work{
 .navbar-default .navbar-nav > li > a{
   color: $main-font-color;
   font-weight: 300;
-  padding: 0 18px 10px 0 ;
+  padding: 0 17px 10px 0 ;
+  font-family: "Clear Sans";
 }
 /**************!!HEADER END!!!******************/
 /**************!!Section#main!!!******************/
@@ -822,6 +824,7 @@ section#choice .choice button{
   height: 37px;
   border: none;
   color: #ffffff;
+  font-family: "Clear Sans";
 }
 section#choice .choice button:hover{
   color: #2272f6;
@@ -1271,7 +1274,6 @@ section#warranty p{
 section#warranty .center_warranty{
   background: url("../img/section-warranty/bg-center.png");
   background-position: center;
-  background-size: 100%;
   margin-top: 55px;
 }
 section#warranty .center_warranty .row{
@@ -1739,6 +1741,75 @@ footer .rights{
 }
 /**************!!Footer END !!!******************/
 
+.call-and-feedback .modal-dialog{
+  margin: 0 auto;
+  padding-top: 250px;
+  width: 400px;
+  max-width: 400px;
+}
+.call-and-feedback .modal-header{
+  border: none;
+  padding-top: 35px;
+  padding-bottom: 0;
+}
+.call-and-feedback h2{
+  font-family: "Panton";
+  font-size: 25px;
+  color: #333333;
+  padding-bottom: 14px;
+  font-weight: 600;
+}
+.call-and-feedback h3{
+  font-family: "Clear Sans";
+  font-size: 14px;
+}
+.call-and-feedback input, .call-and-feedback textarea{
+  display: block;
+  width: 100%;
 
+}
+.call-and-feedback form{
+  padding-bottom: 15px;
+}
+.call-and-feedback input{
+  height: 40px;
+  margin-bottom: 10px;
+}
+.call-and-feedback textarea{
+  height: 144px;
+  resize: none;
+}
+.call-and-feedback input, .call-and-feedback textarea{
+   outline: none;
+   border-radius: 6px;
+   padding:12px;
+   border:  1px solid #dfdfe6;
+   box-sizing: border-box;
+   background-color:  #ffffff;
+    font-family: "Clear Sans";
+    font-size: 14px;
+   color:#858585 ;
+ }
+.call-and-feedback input::placeholder, .call-and-feedback textarea::placeholder{
+  font-family: "Clear Sans";
+  font-size: 14px;
+  color:#858585 ;
+}
+.call-and-feedback input:focus, .call-and-feedback textarea:focus{
+  border: 1px solid #2272f6;
+}
+.call-and-feedback .modal-body button{
+  border-radius: 18px;
+  background-color:  #2272f6;
+  width: 255px;
+  height: 37px;
+  text-transform: uppercase;
+}
+.call-and-feedback button.close{
+  opacity: .8;
+}
+.call-and-feedback button.close:hover{
+  opacity: 1;
+ }
 
 
