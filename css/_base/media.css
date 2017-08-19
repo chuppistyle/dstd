@@ -84,6 +84,10 @@
   section#equipment .img-and-text:nth-child(5)::before {
     right: 0; }
 
+  /*choice*/
+  section#choice .choice button {
+    font-size: 14px; }
+
   /*services*/
   section#services button.circle::after {
     width: 240px; }
@@ -99,6 +103,421 @@
     font-size: 14px; }
 
   section#warranty .work [class*="col"] .img-number::after {
-    right: -100px; } }
+    right: -100px !important; }
+
+  section#warranty .center_warranty h2 {
+    font-size: 20px; }
+
+  .center_warranty h2 span {
+    font-size: 21px; }
+
+  /*Agency*/
+  section#agency #map {
+    width: 62%; }
+
+  section#agency li.address a {
+    font-size: 16px; }
+
+  /*Contact*/
+  section#contact .container > .row {
+    padding-top: 60px; }
+
+  /*footer*/
+  footer [class*="md-6"] {
+    padding-left: 30px;
+    padding-right: 0; }
+
+  /*Modal*/
+  .call-and-feedback .modal-dialog {
+    padding: 0;
+    margin-top: 65px; } }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /*Header-sm*/
+  a.logo img:last-child {
+    display: none; }
+
+  .call button {
+    font-size: 14px; }
+
+  .call button:before {
+    top: 3px;
+    left: 12px; }
+
+  .navbar-nav {
+    font-size: 18px; }
+
+  .navbar-default .navbar-nav > li > a {
+    padding: 0 23px 10px 0; }
+
+  /*Main-sm*/
+  section#main .row {
+    padding-top: 60px;
+    padding-bottom: 140px;
+    text-align: center; }
+
+  section#main h1, section#main h2 {
+    font-size: 46px; }
+
+  section#main h2 {
+    padding-bottom: 26px; }
+
+  section#main .main-block:nth-child(4):before {
+    content: url(../img/section-main/block-2-sm.png); }
+
+  section#main .main-block:before {
+    content: url(../img/section-main/block-1-sm.png);
+    left: 8px;
+    top: 10px; }
+
+  section#main .main-block {
+    padding-bottom: 50px; }
+
+  section#main .scroll-down span {
+    bottom: 65px; }
+
+  /*sentence-sm*/
+  section#sentence .sentence:nth-child(3) .block-info {
+    padding-left: 30px; }
+
+  /*lovol-sm*/
+  section#lovol:before, section#lovol:after {
+    content: ""; }
+
+  /*equipment-sm*/
+  section#equipment br {
+    display: none; }
+
+  section#equipment ul.text li {
+    font-size: 20px; }
+
+  section#equipment h3 {
+    font-size: 25px; }
+
+  section#equipment .centered:last-child button {
+    font-size: 15px; }
+
+  section#equipment .img-and-text:nth-child(5):before {
+    right: 0; }
+
+  section#equipment .img-and-text:nth-child(2):before {
+    right: 0; }
+
+  /*choice-sm*/
+  section#choice .choice button {
+    font-size: 18px; }
+
+  section#choice .modal-dialog {
+    margin-top: 30px; }
+
+  /*distributor-sm*/
+  section#distributor p {
+    min-height: 88px; }
+
+  /*services-sm*/
+  section#services h2 {
+    font-size: 32px; }
+
+  section#services h4 {
+    padding-bottom: 60px;
+    height: 1px;
+    font-size: 20px; }
+
+  section#services button.circle:after {
+    width: 160px; }
+
+  section#services button.circle {
+    width: 50px;
+    height: 50px;
+    font-size: 22px; }
+
+  section#services p br {
+    display: none; }
+
+  section#services p {
+    font-size: 18px; }
+
+  /*warranty-sm*/
+  section#warranty .work [class*="col"]:nth-child(5) .img-number:after {
+    content: url(../img/section-warranty/arrow-up.png); }
+
+  section#warranty .img-number:before {
+    left: 0; }
+
+  section#warranty .work [class*="col"] .img-number:after {
+    right: -60px !important; }
+
+  section#warranty .work [class*="col"]:nth-child(4) .img-number:after {
+    content: ""; }
+
+  section#warranty .work [class*="col"]:nth-child(7) .img-number:after {
+    content: ""; }
+
+  section#warranty .center_warranty h2 {
+    font-size: 18px;
+    padding-bottom: 8px; }
+
+  /*agency-sm*/
+  section#agency #map {
+    width: 64%; }
+
+  /*contact-sm*/
+  section#contact .container > .row {
+    padding-top: 50px; }
+
+  section#contact p.agreement {
+    font-size: 11px; }
+
+  /*footer*/
+  footer p.phone-number {
+    font-size: 16px; }
+
+  footer p.phone-number span {
+    font-size: 19px; }
+
+  .call-and-feedback .modal-dialog {
+    padding-top: 80px; } }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /*header-xs*/
+  header {
+    text-align: center; }
+
+  a.logo img {
+    width: 50%; }
+
+  a.logo img:last-child {
+    display: none; }
+
+  .phone-numb li {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+
+  ul.phone-numb li:last-child {
+    padding-top: 5px; }
+
+  ul.phone-numb span {
+    font-family: "Panton Bold";
+    color: #f4811f;
+    font-size: 14px; }
+
+  .call button {
+    width: 75%;
+    height: 33px;
+    font-size: 15px; }
+
+  header nav {
+    text-align: left; }
+
+  .navbar-nav {
+    padding-top: 0;
+    font-size: 14px; }
+
+  .navbar-default .navbar-nav > li > a {
+    padding-bottom: 5px; }
+
+  nav li {
+    padding-left: 15px; }
+
+  /*main-xs*/
+  section#main .row {
+    padding-top: 30px;
+    padding-bottom: 100px;
+    text-align: center; }
+
+  section#main h1, section#main h2 {
+    font-size: 37px; }
+
+  section#main h2 {
+    padding-bottom: 14px; }
+
+  section#main h1 {
+    padding-bottom: 32px; }
+
+  section#main .main-block {
+    padding-bottom: 32px; }
+
+  section#main .main-block:before {
+    left: 105px; }
+
+  section#main button {
+    width: 300px;
+    height: 32px; }
+
+  section#main .scroll-down span {
+    bottom: 48px;
+    width: 24px;
+    height: 40px; }
+
+  section#main .scroll-down span::after {
+    bottom: -17px;
+    width: 12px;
+    height: 12px;
+    margin-left: -6px; }
+
+  /*sentence-xs*/
+  .sentence {
+    margin-left: 15px; }
+
+  section#sentence .sentence:nth-child(3) .block-info {
+    padding-left: 15px; }
+
+  h2.before {
+    font-size: 24px;
+    padding-top: 40px; }
+
+  section#sentence h2 {
+    padding-bottom: 0; }
+
+  section#sentence .call p {
+    font-size: 14px; }
+
+  section#sentence .call h4 {
+    font-size: 18px;
+    padding-bottom: 0; }
+
+  /*Lovol*/
+  section#lovol h3 {
+    font-size: 20px;
+    line-height: 28px; }
+
+  section#lovol h3 span {
+    font-size: 24px; }
+
+  section#lovol .img {
+    padding-top: 10px; }
+
+  section#lovol:before, section#lovol:after {
+    content: ""; }
+
+  /*advantages-xs*/
+  section#advantages .advantages {
+    padding-top: 26px; }
+
+  section#advantages .block-text:before {
+    content: ""; }
+
+  /*equipment-xs*/
+  section#equipment br {
+    display: none; }
+
+  section#equipment .img-and-text:nth-child(2):before, section#equipment .img-and-text:nth-child(5):before {
+    right: 0; }
+
+  section#equipment h3 {
+    font-size: 28px;
+    padding-top: 30px;
+    padding-bottom: 20px; }
+
+  section#equipment .centered:last-child button {
+    width: 278px;
+    height: 35px;
+    font-size: 14px; }
+
+  section#equipment .centered:last-child button:after {
+    content: url("../img/section-equipment/arrow-xs.png");
+    right: -50px; }
+
+  section#choice .modal-dialog {
+    margin-top: 30px; }
+
+  table.table td {
+    font-size: 12px; }
+
+  section#choice .table-top.first {
+    left: 42%;
+    font-size: 14px; }
+
+  section#choice .table-top.second {
+    right: 10%;
+    font-size: 14px; }
+
+  section#choice .modal-dialog {
+    margin-left: 2px;
+    margin-right: 2px; }
+
+  /*distributor-xs*/
+  section#distributor h2 {
+    padding-bottom: 10px; }
+
+  section#distributor .block {
+    padding: 0 50px; }
+
+  /*services-xs*/
+  section#services h2 {
+    font-size: 30px; }
+
+  section#services h4 {
+    height: 1px;
+    font-size: 18px; }
+
+  section#services button.circle {
+    width: 45px;
+    height: 45px;
+    font-size: 21px; }
+
+  section#services button.circle:after {
+    width: 202px; }
+
+  section#services .col-lg-3:nth-child(2n) button:after {
+    display: block; }
+
+  section#services .col-lg-3:nth-child(3) button:after, section#services .col-lg-3:nth-child(7) button:after {
+    display: none; }
+
+  section#services [class*='col-xs'] {
+    margin-top: 10px; }
+
+  section#services p {
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 16px; }
+
+  section#services button.application {
+    width: 250px;
+    height: 35px;
+    font-size: 14px; }
+
+  /*gallery-xs*/
+  section#gallery h3 {
+    padding-top: 5px;
+    font-family: "Clear Sans";
+    font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 15px; }
+
+  section#gallery #carousel img {
+    width: 300px;
+    height: 150px; }
+
+  section#gallery #next span img {
+    position: absolute;
+    right: -180px;
+    width: 30px; }
+
+  section#gallery #prev span img {
+    position: absolute;
+    left: -140px;
+    width: 30px; }
+
+  section#gallery #center-nav {
+    margin-top: 58px; }
+
+  section#gallery #carousel {
+    height: 165px; }
+
+  section#gallery p {
+    font-size: 14px; }
+
+  section#gallery p.right::before {
+    content: url("../img/section-gallery/slash-xs.png"); }
+
+  section#gallery .nav #next span::before {
+    top: 27%;
+    font-size: 14px; }
+
+  section#gallery .nav #prev span::before {
+    top: 35%;
+    font-size: 14px; } }
 
 /*# sourceMappingURL=media.css.map */

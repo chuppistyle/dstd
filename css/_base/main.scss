@@ -758,6 +758,7 @@ section#equipment .centered:last-child button{
   border: none;
   text-transform: uppercase;
   position: relative;
+  font-family: "Panton";
 }
 section#equipment .centered:last-child button:hover{
   color:#f58220;
@@ -1689,6 +1690,7 @@ footer .row{
 footer img{
   vertical-align: middle;
   padding-top: 20px;
+  max-width: 100%;
 }
 footer nav{
   padding-top: 24px;

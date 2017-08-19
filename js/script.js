@@ -12,64 +12,74 @@ $('.slick-slider-reviews').slick({
     dots:true
 });
 // slider in section-gallery
-    $(document).ready(function () {
-        var carousel = $("#carousel").waterwheelCarousel({
-            flankingItems: 1,
-            movingToCenter: function ($item) {
-                $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
-            },
-            activeClassName: 'border',
-            separation: 350
-        });
+$(function () {
+    var width = window.innerWidth;
+    if(width<= 480){
+        var  separation = 100
+    }
+    else {
+        var separation = 350
+    }
+    function gallery() {
+        $(document).ready(function () {
+            var carousel = $("#carousel").waterwheelCarousel({
+                flankingItems: 1,
+                movingToCenter: function ($item) {
+                    $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+                },
+                activeClassName: 'border',
+                separation: separation
+            });
 
-          var leftValue = parseInt($('p.left').text());
-          var SliderImgCount =  $('#carousel a').length;
-          $('p.right').text(SliderImgCount);
-
-        $('#prev').bind('click', function () {
-            carousel.prev();
-            var leftValue = parseInt($('p.left').text());
-            $('p.right').text(SliderImgCount);
-            if(leftValue == 1){
-                $('p.left').text(SliderImgCount)
-            }
-            else {
-                $('p.left').text(leftValue-1);
-            };
-            return false
-        });
-
-        $('#next').bind('click', function () {
-            carousel.next();
             var leftValue = parseInt($('p.left').text());
             var SliderImgCount =  $('#carousel a').length;
             $('p.right').text(SliderImgCount);
-            if(leftValue < SliderImgCount){
-                $('p.left').text(leftValue+1);
-            }
-            else{
-                $('p.left').text(1);
-            }
-            return false;
-        });
 
-        $('#reload').bind('click', function () {
-            newOptions = eval("(" + $('#newoptions').val() + ")");
-            carousel.reload(newOptions);
-            return false;
-        });
+            $('#prev').bind('click', function () {
+                carousel.prev();
+                var leftValue = parseInt($('p.left').text());
+                $('p.right').text(SliderImgCount);
+                if(leftValue == 1){
+                    $('p.left').text(SliderImgCount)
+                }
+                else {
+                    $('p.left').text(leftValue-1);
+                };
+                return false
+            });
 
-    });
+            $('#next').bind('click', function () {
+                carousel.next();
+                var leftValue = parseInt($('p.left').text());
+                var SliderImgCount =  $('#carousel a').length;
+                $('p.right').text(SliderImgCount);
+                if(leftValue < SliderImgCount){
+                    $('p.left').text(leftValue+1);
+                }
+                else{
+                    $('p.left').text(1);
+                }
+                return false;
+            });
+
+            $('#reload').bind('click', function () {
+                newOptions = eval("(" + $('#newoptions').val() + ")");
+                carousel.reload(newOptions);
+                return false;
+            });
+
+        });
+    };
+    gallery(separation);
+});
 ///Google Map//
 var map;
-
 function openMap() {
     document.querySelector('#open-map').onclick= function () {
         document.querySelector('.contact-form').style.display="none";
         document.querySelector('#map-canvas').classList.add('before-none');
     };
 }
-
 openMap();
 var coords={
     'l14':{lat:55.924708, lng:37.504808},
@@ -141,3 +151,38 @@ function initMap() {
         document.querySelector('#map-canvas').classList.remove('before-none');
     });
 };
+
+//scroll-animate
+$(document).ready(function(){
+    $("#header").on("click","a", function (event) {
+
+        event.preventDefault();
+
+        var id  = $(this).attr('href');
+
+        var top = $(id).offset().top;
+
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+    $("#bot").on("click","a", function (event) {
+
+        event.preventDefault();
+
+        var id  = $(this).attr('href');
+
+        var top = $(id).offset().top;
+
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+    $(".scroll-down").on("click", function (event) {
+
+        event.preventDefault();
+
+        var id  = $(this).attr('href');
+
+        var top = $(id).offset().top;
+
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+
