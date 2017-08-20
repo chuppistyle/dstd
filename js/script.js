@@ -85,13 +85,18 @@ var coords={
     'l14':{lat:55.924708, lng:37.504808},
     'l15':{lat:55.924119, lng:37.503349}
 };
+var zoom = 16;
+var width = window.innerWidth;
+if(width<=479){
+    zoom = 15;
+}
 function initMap() {
 
     var icon = "../img/map-marker.png";
     var map, map2;
     map = new google.maps.Map(document.getElementById('map'), {
         center: coords['l14'],
-        zoom: 16,
+        zoom: zoom,
         disableDefaultUI: true
     });
     document.querySelector("#d14").onclick=function () {

@@ -244,6 +244,16 @@ section#main .scroll-down span {
     font-size: 18px;
   }
 
+  /*gallery*/
+  section#gallery #center-nav {
+    top: 56%;}
+  section#gallery .nav #next span:before {
+    top: 40%;
+  }
+  section#gallery .nav #prev span:before {
+    top: 47%;
+  }
+
   /*warranty-sm*/
   section#warranty .work [class*="col"]:nth-child(5) .img-number:after {
     content: url(../img/section-warranty/arrow-up.png);
@@ -294,6 +304,9 @@ section#main .scroll-down span {
 
 @media screen and(min-width: 480px) and (max-width: 767px) {
   /*header-xs*/
+  body{
+    overflow-x: hidden;
+  }
   header {
     text-align: center;
   }
@@ -355,7 +368,7 @@ section#main .scroll-down span {
     padding-bottom: 32px;
   }
   section#main .main-block:before {
-    left: 105px;
+    left: 130px;
   }
   section#main button {
     width: 300px;
@@ -534,11 +547,672 @@ section#choice .modal-dialog{
   }
   section#gallery .nav #next span::before {
     top: 27%;
-    font-size: 14px}
+    font-size: 14px;
+    right: -45px;
+  }
   section#gallery .nav #prev span::before {
     top: 35%;
+    font-size: 14px;
+    left: -15px;}
+
+  /*warranty-xs*/
+  section#warranty .container > .row.warranty{
+    padding: 42px 0;
+  }
+  section#warranty .img-number {
+    padding-top: 15px;
+  }
+  section#warranty .work [class*="col"] .img-number:after {
+    transform: rotate(90deg);
+  }
+  section#warranty .work [class*="col"]:nth-child(2n+1) .img-number:after {
+    content: url(../img/section-warranty/arrow-down.png);
+    left: 150px;
+    top: 125px;
+    right: 0;
+  }
+  section#warranty .work [class*="col"]:nth-child(2n) .img-number:after {
+    content: url(../img/section-warranty/arrow-up.png);
+    position: absolute;
+    right: 240px;
+    top: 125px;
+  }
+  section#warranty .work [class*="col"]:last-child .img-number:after{
+    content: "";
+  }
+  section#warranty .img-number:before {
+    top: 50%;
+    margin-top: -40px;
+    left: 50%;
+    margin-left: -54px;
+  }
+  section#warranty p {
+    font-size: 14px;
+    padding-bottom: 40px;
+    line-height: 18px;
+  }
+  section#warranty img{
+    max-width: 100%;
+    width: 15%;
+  }
+  section#warranty .center_warranty .row {
+    padding: 15px 0;
+  }
+  section#warranty .center_warranty h2 {
     font-size: 14px;}
+  .center_warranty h2 span {
+    font-size: 16px;
+  }
+  section#warranty .block:nth-child(2) img {
+    margin-left: -36px;
+  }
+  section#warranty .block {
+    padding-top: 100px;
+    padding-bottom: 15px;
+  }
+  section#warranty .block:nth-child(4){
+    padding-top: 110px;
+  }
+  section#warranty .block:nth-child(4) img {
+    margin-left: -40px;
+  }
+  section#warranty button {
+    width: 85%;
+    height: 36px;
+    font-size: 14px;
+  }
+  section#warranty .block:nth-child(4) h4 {
+    padding-bottom: 20px;
+  }
+  section#warranty h4 {
+    font-size: 20px;}
+
+  /*reviews-xs*/
+  section#reviews h2 {
+    font-size: 24px;}
+  section#reviews .review {
+    max-height: 450px;
+    padding-top: 60px;
+  }
+  section#reviews .slick-slider-reviews p:last-child {
+    padding-top: 15px;
+  }
+  section#reviews p {
+    font-size: 15px;}
+
+  /*agency-xs*/
+  section#agency .container > .row {
+    padding: 42px 0 0 0;}
+  section#agency h2 {
+    padding-bottom: 20px;
+  }
+  section#agency #map {
+    width: 62%;}
+  section#agency h3 {
+    font-size: 16px;}
+
+  /*contact-xs*/
+  section#contact .container > .row {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 660px;
+  }
+  section#contact .contact{
+    text-align: center;
+  }
+  section#contact .contact h3 {
+    font-size: 24px;
+    padding-bottom: 20px;
+    text-align: left;
+  }
+  section#contact .contact ul {
+    padding-bottom: 10px;
+    text-align: left;
+  }
+  section#contact .contact li {
+    padding-bottom: 10px;}
+
+  section#contact .contact button {
+    width: 200px;
+    height: 36px;
+    font-size: 14px;
+    margin-left: 25%;}
+  section#contact .form h3 {
+    font-size: 24px;
+    padding: 15px 0;}
+  section#contact form .row div:nth-child(2) {
+    padding-left: 15px;
+  }
+  section#contact form .row div:nth-child(1) {
+    padding-right: 15px;
+  }
+  section#contact .form button {
+    width: 200px;
+    height: 36px;;
+    font-size: 14px;
+  }
+
+  /*footer-xs*/
+  footer .row{
+    text-align: center;
+  }
+  nav#bot{
+    text-align: center;
+  }
+  nav#bot li {
+    padding-left: 0;
+    font-size: 14px;
+    padding-right: 5px;
+  }
+  footer h3 {
+    padding-top: 10px;}
+  footer p.phone-number {;
+    font-size: 16px;}
+  footer p.phone-number span {
+    font-size: 20px;}
+  footer .rights {
+    text-align: left;}
+
+    .call-and-feedback .modal-dialog {
+      margin: 0 auto;
+      padding-top: 30px;}
+
+  .call-and-feedback h2 {
+    font-family: "Panton";
+    font-size: 24px;
+    color: #333333;
+    padding-bottom: 10px}
 }
-@media screen and(min-width: 320px) and (max-width: 479px){
+@media screen and(min-width: 320px) and (max-width: 479px) {
+  h2.before {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+  h2.before:before{
+    top: -25px;
+  }
+  /*header-xs*/
+  //body{
+  //  overflow-x: hidden;
+  //}
+  header {
+    text-align: center;
+  }
+  a.logo img {;
+    width: 75%;
+  }
+  a.logo img:last-child {
+    display: none;
+  }
+  .call button:before {
+    content: url(../img/header/call.png);
+    position: absolute;
+    top: 4px;
+    left: 15px;
+  }
+  .phone-numb li {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  ul.phone-numb li:last-child {
+    padding-top: 5px;
+  }
+  ul.phone-numb span {
+    font-family: "Panton Bold";
+    color: #f4811f;
+    font-size: 14px;
+  }
+  .call button {
+    width: 75%;
+    height: 33px;
+    font-size: 15px;
+  }
+  header nav {
+    text-align: left;
+  }
+  .navbar-nav {
+    padding-top: 0;
+    font-size: 14px;
+  }
+  .navbar-default .navbar-nav > li > a {
+    padding-bottom: 5px;
+  }
+  nav li {
+    padding-left: 15px;
+  }
+
+  /*main-xs*/
+  section#main .row {
+    padding-top: 30px;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+  section#main h1, section#main h2 {
+    font-size: 32px;
+  }
+  section#main h2 {
+    padding-bottom: 14px;
+  }
+  section#main h1 {
+    padding-bottom: 32px;
+  }
+  section#main .main-block {
+    padding-bottom: 32px;
+  }
+  section#main .main-block:before {
+    left: 20px;
+  }
+  section#main button {
+    width: 300px;
+    height: 32px;
+  }
+  section#main .scroll-down span {
+    bottom: 48px;
+    width: 24px;
+    height: 40px;
+    margin-left: -10px;
+  }
+  section#main .scroll-down span::after {
+    bottom: -17px;
+    width: 12px;
+    height: 12px;
+    margin-left: -6px;
+  }
+
+  /*sentence-xs*/
+  .sentence {
+    margin-left: 15px;
+  }
+  section#sentence .block-info {
+    vertical-align: top;
+    padding: 12px 0 0 15px;
+  }
+  section#sentence .sentence:nth-child(3) .block-info {
+    padding-left: 15px;
+  }
+  section#sentence h3 {
+    font-size: 22px;}
+  section#sentence ul li {
+    font-size: 12px;
+    padding-bottom: 8px;
+  }
+  section#sentence ul li:last-child {
+    font-size: 17px;}
+  section#sentence h2 {
+    padding-bottom: 0;
+  }
+  section#sentence .block p.cost {
+    font-size: 18px;}
+  section#sentence .call p {
+    font-size: 14px;
+  }
+  section#sentence .call h4 {
+    font-size: 18px;
+    padding-bottom: 0;
+  }
+  section#sentence .block p.cost {
+    font-size: 18px;}
+  section#sentence button {
+    font-size: 11px;
+    width: 248px;
+    height: 30px;
+  }
+
+
+  /*Lovol-xs*/
+  section#lovol .row {
+    padding: 20px 0;
+  }
+  section#lovol h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  section#lovol h3 span {
+    font-size: 24px;
+  }
+  section#lovol .img {
+    padding-top: 10px;
+  }
+  section#lovol img {
+    margin-left: 0;
+    width: 50%;
+  }
+  section#lovol .img span {
+    font-size: 42px;}
+  section#lovol:before, section#lovol:after{
+    content: "";
+  }
+  /*advantages-xs*/
+  section#advantages .advantages {
+    padding-top: 26px;
+  }
+  section#advantages .block-text:before{
+    content: "";
+  }
+
+  /*equipment-xs*/
+  section#equipment br{
+    display: none;
+  }
+  section#equipment .img-and-text:nth-child(2):before, section#equipment .img-and-text:nth-child(5):before{
+    right: 0;
+  }
+  section#equipment h3 {
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  section#equipment .centered:last-child button {
+    width: 255px;
+    height: 35px;
+    font-size: 12px;
+  }
+  section#equipment .centered:last-child button:after {
+    content: "";
+  }
+
+  /*choice*/
+  section#choice p.top-text:before{
+    content: "";
+  }
+  section#choice h3.p-t {
+    padding-top: 25px;
+  }
+  section#choice h3 {
+  padding-bottom: 22px;
+  font-family: "Panton SemiBold";
+  font-size: 20px;
+}
+  section#choice .modal-dialog{
+    margin-top: 30px;
+  }
+  table.table td{
+    font-size: 10px;
+  }
+  table.table tr td:first-child {
+    font-size: 10px;}
+  section#choice .table-top.first {
+    left: 28%;
+    font-size: 12px;
+  }
+  table.table tbody tr td[colspan="3"] {
+     padding-left: 20%;
+     font-size: 12px;
+   }
+
+  section#choice .table-top.second {
+    right: 13%;
+    font-size: 12px;
+  }
+  section#choice .modal-dialog {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  /*distributor-xs*/
+  section#distributor h2 {
+    padding-bottom: 10px;
+  }
+  section#distributor .block {
+    padding: 0 50px;
+  }
+
+  /*services-xs*/
+  section#services h2 {
+    font-size: 30px;}
+  section#services h4{
+    height: 1px;
+    font-size: 18px;
+  }
+  section#services button.circle {
+    width: 45px;
+    height: 45px;
+    font-size: 21px;
+  }
+  section#services button.circle:after {
+    width: 164px;}
+  section#services .col-lg-3:nth-child(2n) button:after{
+    display: block;
+  }
+  section#services .col-lg-3:nth-child(3) button:after, section#services .col-lg-3:nth-child(7) button:after{
+    display: none;
+  }
+  section#services [class*='col-xs']{
+    margin-top: 10px;
+  }
+  section#services p {
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  section#services p br{
+    display: none;
+  }
+  section#services button.application {
+    width: 250px;
+    height: 35px;
+    font-size: 14px;
+  }
+  section#services h3 {
+    font-size: 22px;}
+
+  /*gallery-xs*/
+  section#gallery h3 {
+    padding-top: 5px;
+    font-family: "Clear Sans";
+    font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 15px;
+  }
+  section#gallery #carousel img {
+    width: 300px;
+    height: 150px;
+  }
+  section#gallery #next span img {
+    position: absolute;
+    right: -180px;
+    width: 30px;
+  }
+  section#gallery #prev span img {
+    position: absolute;
+    left: -140px;
+    width: 30px;
+  }
+  section#gallery #center-nav{
+    margin-top: 0;
+    top:67%
+  }
+  section#gallery #carousel{
+    height: 165px;
+  }
+  section#gallery p{
+    font-size: 14px;
+  }
+  section#gallery p.right::before {
+    content: url("../img/section-gallery/slash-xs.png");
+  }
+  section#gallery .nav #next span::before {
+    top: 24%;
+    font-size: 14px;
+    right: -45px;
+  }
+  section#gallery .nav #prev span::before {
+    top: 30%;
+    font-size: 14px;
+    left: -15px;}
+
+  /*warranty-xs*/
+  section#warranty .container > .row.warranty{
+    padding: 42px 0;
+  }
+  section#warranty .img-number {
+    padding-top: 15px;
+  }
+  section#warranty .work [class*="col"] .img-number:after {
+    transform: rotate(90deg);
+  }
+  section#warranty .work [class*="col"]:nth-child(2n+1) .img-number:after {
+    content: url(../img/section-warranty/arrow-down.png);
+    left: 150px;
+    top: 125px;
+    right: 0;
+  }
+  section#warranty .work [class*="col"]:nth-child(2n) .img-number:after {
+    content: url(../img/section-warranty/arrow-up.png);
+    position: absolute;
+    right: 170px;
+    top: 110px;
+  }
+  section#warranty .work [class*="col"]:last-child .img-number:after{
+    content: "";
+  }
+  section#warranty .img-number:before {
+    top: 50%;
+    margin-top: -40px;
+    left: 50%;
+    margin-left: -54px;
+  }
+  section#warranty p {
+    font-size: 14px;
+    padding-bottom: 40px;
+    line-height: 18px;
+  }
+  section#warranty img{
+    max-width: 100%;
+    width: 25%;
+  }
+  section#warranty .center_warranty .row {
+    padding: 15px 0;
+  }
+  section#warranty .center_warranty h2 {
+    font-size: 14px;}
+  .center_warranty h2 span {
+    font-size: 16px;
+  }
+  section#warranty .block:nth-child(2) img {
+    margin-left: -36px;
+  }
+  section#warranty .block {
+    padding-top: 100px;
+    padding-bottom: 15px;
+  }
+  section#warranty .block:nth-child(4){
+    padding-top: 120px;
+  }
+  section#warranty .block:nth-child(4) img {
+    margin-left: -40px;
+  }
+  section#warranty button {
+    width: 85%;
+    height: 36px;
+    font-size: 14px;
+  }
+  section#warranty .block:nth-child(4) h4 {
+    padding-bottom: 20px;
+  }
+  section#warranty h4 {
+    font-size: 20px;}
+
+  /*reviews-xs*/
+  section#reviews h2 {
+    font-size: 22px;}
+  section#reviews .review {
+    max-height: 450px;
+    padding-top: 60px;
+  }
+  section#reviews .slick-slider-reviews p:last-child {
+    padding-top: 15px;
+  }
+  section#reviews p {
+    font-size: 14px;}
+
+  /*agency-xs*/
+  section#agency .container > .row {
+    padding: 42px 0 0 0;}
+  section#agency h2 {
+    padding-bottom: 20px;
+  }
+  section#agency li.address a {
+    font-size: 13px;}
+  section#agency #map {
+    width: 50%;}
+  section#agency .text {
+    width: 44%;}
+  section#agency h3 {
+    font-size: 16px;}
+
+  /*contact-xs*/
+  section#contact .container > .row {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 685px;
+  }
+  section#contact .contact{
+    text-align: center;
+  }
+  section#contact .contact h3 {
+    font-size: 24px;
+    padding-bottom: 20px;
+    text-align: left;
+  }
+  section#contact .contact li {
+    padding-bottom: 10px;}
+  section#contact .contact ul {
+    padding-bottom: 10px;
+    text-align: left;
+  }
+  section#contact .contact button {
+    width: 200px;
+    height: 36px;
+    font-size: 14px;  }
+  section#contact .form h3 {
+    font-size: 24px;
+    padding: 15px 0;
+  }
+  section#contact form .row div:nth-child(2) {
+    padding-left: 15px;
+  }
+  section#contact form .row div:nth-child(1) {
+    padding-right: 15px;
+  }
+  section#contact .form button {
+    width: 200px;
+    height: 36px;;
+    font-size: 14px;
+  }
+
+  /*footer-xs*/
+  footer .row{
+    text-align: center;
+  }
+  nav#bot{
+    text-align: center;
+  }
+  nav#bot li {
+    padding-left: 0;
+    font-size: 14px;
+    padding-right: 5px;
+  }
+  footer h3 {
+    padding-top: 10px;}
+  footer p.phone-number {;
+    font-size: 16px;}
+  footer p.phone-number span {
+    font-size: 20px;}
+  footer .rights {
+    text-align: left;}
+
+  .call-and-feedback .modal-dialog {
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 300px;}
+
+  .call-and-feedback h2 {
+    font-family: "Panton";
+    font-size: 24px;
+    color: #333333;
+    padding-bottom: 10px}
 
 }

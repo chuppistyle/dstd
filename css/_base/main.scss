@@ -478,6 +478,7 @@ section#sentence button{
   width: 350px;
   height: 35px;
   margin-bottom: 18px;
+  font-family: "Panton";
 }
 section#sentence .sentence:nth-child(3) [class*='col-lg-7']{
   float: right;
@@ -1179,7 +1180,7 @@ section#gallery #prev  span  img {
 }
 section#gallery #next  span  img {
   position: absolute;
-  right: -300px;
+  right: -310px;
 }
 section#gallery .border{
   border: 10px solid #ffffff;
